@@ -1,16 +1,16 @@
 (function () {
   // ==UserScript==
   // @name         Rally I18N default value
-	// @namespace    http://github.com/cbittencourt/userscripts
-	// @version      0.1
-	// @description  Set default value for Rally's stupid I18N field with no default value
-	// @author       Carlos Bittencourt
-	// @match        https://rally1.rallydev.com/slm/ar/new.sp
+  // @namespace    http://github.com/cbittencourt/userscripts
+  // @version      0.1
+  // @description  Set default value for Rally's stupid I18N field with no default value
+  // @author       Carlos Bittencourt
+  // @match        https://rally1.rallydev.com/slm/ar/new.sp
   // @include      *rally1.rallydev.com/slm/ar/new.sp*
-	// @grant        none
-	// ==/UserScript==
+  // @grant        none
+  // ==/UserScript==
     
-	var dp = document.getElementsByName("customAttributes[13].value")[0];
+  var dp = document.getElementsByName("customAttributes[13].value")[0];
   dp.selectedIndex = 2; //0 = no value; 1 = yes; 2 = no;
 
 })();
